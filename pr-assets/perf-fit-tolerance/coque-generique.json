@@ -1,0 +1,1553 @@
+{
+ "commands": [
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "contour"
+   }
+  },
+  {
+   "command": "sketch.spline.fit_point",
+   "params": {
+    "points": [
+     [
+      35.0,
+      0.0
+     ],
+     [
+      34.97601,
+      16.01394
+     ],
+     [
+      34.904,
+      22.6316
+     ],
+     [
+      34.78388,
+      27.68626
+     ],
+     [
+      34.61547,
+      31.91813
+     ],
+     [
+      34.39853,
+      35.61198
+     ],
+     [
+      34.13274,
+      38.91251
+     ],
+     [
+      33.81769,
+      41.90469
+     ],
+     [
+      33.45285,
+      44.64314
+     ],
+     [
+      33.0376,
+      47.16517
+     ],
+     [
+      32.57117,
+      49.49747
+     ],
+     [
+      32.05264,
+      51.65976
+     ],
+     [
+      31.48088,
+      53.66701
+     ],
+     [
+      30.85456,
+      55.5308
+     ],
+     [
+      30.17205,
+      57.26028
+     ],
+     [
+      29.43137,
+      58.86275
+     ],
+     [
+      28.63014,
+      60.34409
+     ],
+     [
+      27.7654,
+      61.70912
+     ],
+     [
+      26.8335,
+      62.96176
+     ],
+     [
+      25.82988,
+      64.10527
+     ],
+     [
+      24.74874,
+      65.14234
+     ],
+     [
+      23.58259,
+      66.0752
+     ],
+     [
+      22.32157,
+      66.9057
+     ],
+     [
+      20.95234,
+      67.63538
+     ],
+     [
+      19.45625,
+      68.26549
+     ],
+     [
+      17.80599,
+      68.79707
+     ],
+     [
+      15.95907,
+      69.23094
+     ],
+     [
+      13.84313,
+      69.56776
+     ],
+     [
+      11.3158,
+      69.808
+     ],
+     [
+      8.00697,
+      69.95202
+     ],
+     [
+      0.0,
+      70.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.spline.fit_point",
+   "params": {
+    "points": [
+     [
+      0.0,
+      70.0
+     ],
+     [
+      -8.00697,
+      69.95202
+     ],
+     [
+      -11.3158,
+      69.808
+     ],
+     [
+      -13.84313,
+      69.56776
+     ],
+     [
+      -15.95907,
+      69.23094
+     ],
+     [
+      -17.80599,
+      68.79707
+     ],
+     [
+      -19.45625,
+      68.26549
+     ],
+     [
+      -20.95234,
+      67.63538
+     ],
+     [
+      -22.32157,
+      66.9057
+     ],
+     [
+      -23.58259,
+      66.0752
+     ],
+     [
+      -24.74874,
+      65.14234
+     ],
+     [
+      -25.82988,
+      64.10527
+     ],
+     [
+      -26.8335,
+      62.96176
+     ],
+     [
+      -27.7654,
+      61.70912
+     ],
+     [
+      -28.63014,
+      60.34409
+     ],
+     [
+      -29.43137,
+      58.86275
+     ],
+     [
+      -30.17205,
+      57.26028
+     ],
+     [
+      -30.85456,
+      55.5308
+     ],
+     [
+      -31.48088,
+      53.66701
+     ],
+     [
+      -32.05264,
+      51.65976
+     ],
+     [
+      -32.57117,
+      49.49747
+     ],
+     [
+      -33.0376,
+      47.16517
+     ],
+     [
+      -33.45285,
+      44.64314
+     ],
+     [
+      -33.81769,
+      41.90469
+     ],
+     [
+      -34.13274,
+      38.91251
+     ],
+     [
+      -34.39853,
+      35.61198
+     ],
+     [
+      -34.61547,
+      31.91813
+     ],
+     [
+      -34.78388,
+      27.68626
+     ],
+     [
+      -34.904,
+      22.6316
+     ],
+     [
+      -34.97601,
+      16.01394
+     ],
+     [
+      -35.0,
+      0.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.spline.fit_point",
+   "params": {
+    "points": [
+     [
+      -35.0,
+      0.0
+     ],
+     [
+      -34.97601,
+      -16.01394
+     ],
+     [
+      -34.904,
+      -22.6316
+     ],
+     [
+      -34.78388,
+      -27.68626
+     ],
+     [
+      -34.61547,
+      -31.91813
+     ],
+     [
+      -34.39853,
+      -35.61198
+     ],
+     [
+      -34.13274,
+      -38.91251
+     ],
+     [
+      -33.81769,
+      -41.90469
+     ],
+     [
+      -33.45285,
+      -44.64314
+     ],
+     [
+      -33.0376,
+      -47.16517
+     ],
+     [
+      -32.57117,
+      -49.49747
+     ],
+     [
+      -32.05264,
+      -51.65976
+     ],
+     [
+      -31.48088,
+      -53.66701
+     ],
+     [
+      -30.85456,
+      -55.5308
+     ],
+     [
+      -30.17205,
+      -57.26028
+     ],
+     [
+      -29.43137,
+      -58.86275
+     ],
+     [
+      -28.63014,
+      -60.34409
+     ],
+     [
+      -27.7654,
+      -61.70912
+     ],
+     [
+      -26.8335,
+      -62.96176
+     ],
+     [
+      -25.82988,
+      -64.10527
+     ],
+     [
+      -24.74874,
+      -65.14234
+     ],
+     [
+      -23.58259,
+      -66.0752
+     ],
+     [
+      -22.32157,
+      -66.9057
+     ],
+     [
+      -20.95234,
+      -67.63538
+     ],
+     [
+      -19.45625,
+      -68.26549
+     ],
+     [
+      -17.80599,
+      -68.79707
+     ],
+     [
+      -15.95907,
+      -69.23094
+     ],
+     [
+      -13.84313,
+      -69.56776
+     ],
+     [
+      -11.3158,
+      -69.808
+     ],
+     [
+      -8.00697,
+      -69.95202
+     ],
+     [
+      -0.0,
+      -70.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.spline.fit_point",
+   "params": {
+    "points": [
+     [
+      -0.0,
+      -70.0
+     ],
+     [
+      8.00697,
+      -69.95202
+     ],
+     [
+      11.3158,
+      -69.808
+     ],
+     [
+      13.84313,
+      -69.56776
+     ],
+     [
+      15.95907,
+      -69.23094
+     ],
+     [
+      17.80599,
+      -68.79707
+     ],
+     [
+      19.45625,
+      -68.26549
+     ],
+     [
+      20.95234,
+      -67.63538
+     ],
+     [
+      22.32157,
+      -66.9057
+     ],
+     [
+      23.58259,
+      -66.0752
+     ],
+     [
+      24.74874,
+      -65.14234
+     ],
+     [
+      25.82988,
+      -64.10527
+     ],
+     [
+      26.8335,
+      -62.96176
+     ],
+     [
+      27.7654,
+      -61.70912
+     ],
+     [
+      28.63014,
+      -60.34409
+     ],
+     [
+      29.43137,
+      -58.86275
+     ],
+     [
+      30.17205,
+      -57.26028
+     ],
+     [
+      30.85456,
+      -55.5308
+     ],
+     [
+      31.48088,
+      -53.66701
+     ],
+     [
+      32.05264,
+      -51.65976
+     ],
+     [
+      32.57117,
+      -49.49747
+     ],
+     [
+      33.0376,
+      -47.16517
+     ],
+     [
+      33.45285,
+      -44.64314
+     ],
+     [
+      33.81769,
+      -41.90469
+     ],
+     [
+      34.13274,
+      -38.91251
+     ],
+     [
+      34.39853,
+      -35.61198
+     ],
+     [
+      34.61547,
+      -31.91813
+     ],
+     [
+      34.78388,
+      -27.68626
+     ],
+     [
+      34.904,
+      -22.6316
+     ],
+     [
+      34.97601,
+      -16.01394
+     ],
+     [
+      35.0,
+      -0.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "contour",
+    "distance": 8,
+    "direction": "symmetric",
+    "name": "corps",
+    "body_name": "C"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XZ",
+    "name": "profil"
+   }
+  },
+  {
+   "command": "sketch.spline.fit_point",
+   "params": {
+    "points": [
+     [
+      35.0,
+      1.0
+     ],
+     [
+      34.99358,
+      1.19621
+     ],
+     [
+      34.97433,
+      1.39158
+     ],
+     [
+      34.94236,
+      1.58527
+     ],
+     [
+      34.89778,
+      1.77646
+     ],
+     [
+      34.84079,
+      1.96432
+     ],
+     [
+      34.77164,
+      2.14805
+     ],
+     [
+      34.69062,
+      2.32687
+     ],
+     [
+      34.59808,
+      2.5
+     ],
+     [
+      34.49441,
+      2.66671
+     ],
+     [
+      34.38006,
+      2.82628
+     ],
+     [
+      34.25552,
+      2.97804
+     ],
+     [
+      34.12132,
+      3.12132
+     ],
+     [
+      33.97804,
+      3.25552
+     ],
+     [
+      33.82628,
+      3.38006
+     ],
+     [
+      33.66671,
+      3.49441
+     ],
+     [
+      33.5,
+      3.59808
+     ],
+     [
+      33.32687,
+      3.69062
+     ],
+     [
+      33.14805,
+      3.77164
+     ],
+     [
+      32.96432,
+      3.84079
+     ],
+     [
+      32.77646,
+      3.89778
+     ],
+     [
+      32.58527,
+      3.94236
+     ],
+     [
+      32.39158,
+      3.97433
+     ],
+     [
+      32.19621,
+      3.99358
+     ],
+     [
+      32.0,
+      4.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      32.0,
+      4.0
+     ],
+     [
+      32,
+      4.5
+     ],
+     [
+      36,
+      4.5
+     ],
+     [
+      36,
+      1
+     ],
+     [
+      35.0,
+      1.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.spline.fit_point",
+   "params": {
+    "points": [
+     [
+      35.0,
+      -1.0
+     ],
+     [
+      34.99358,
+      -1.19621
+     ],
+     [
+      34.97433,
+      -1.39158
+     ],
+     [
+      34.94236,
+      -1.58527
+     ],
+     [
+      34.89778,
+      -1.77646
+     ],
+     [
+      34.84079,
+      -1.96432
+     ],
+     [
+      34.77164,
+      -2.14805
+     ],
+     [
+      34.69062,
+      -2.32687
+     ],
+     [
+      34.59808,
+      -2.5
+     ],
+     [
+      34.49441,
+      -2.66671
+     ],
+     [
+      34.38006,
+      -2.82628
+     ],
+     [
+      34.25552,
+      -2.97804
+     ],
+     [
+      34.12132,
+      -3.12132
+     ],
+     [
+      33.97804,
+      -3.25552
+     ],
+     [
+      33.82628,
+      -3.38006
+     ],
+     [
+      33.66671,
+      -3.49441
+     ],
+     [
+      33.5,
+      -3.59808
+     ],
+     [
+      33.32687,
+      -3.69062
+     ],
+     [
+      33.14805,
+      -3.77164
+     ],
+     [
+      32.96432,
+      -3.84079
+     ],
+     [
+      32.77646,
+      -3.89778
+     ],
+     [
+      32.58527,
+      -3.94236
+     ],
+     [
+      32.39158,
+      -3.97433
+     ],
+     [
+      32.19621,
+      -3.99358
+     ],
+     [
+      32.0,
+      -4.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      32.0,
+      -4.0
+     ],
+     [
+      32,
+      -4.5
+     ],
+     [
+      36,
+      -4.5
+     ],
+     [
+      36,
+      -1
+     ],
+     [
+      35.0,
+      -1.0
+     ]
+    ]
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.sweep",
+   "params": {
+    "sketch": "profil",
+    "path_sketch": "contour",
+    "path": [
+     "s1",
+     "s2",
+     "s3",
+     "s4"
+    ],
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "bords arrondis"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -3.9,
+    "name": "jupe0"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -8.0,
+     28.0
+    ],
+    "p1": [
+     32.0,
+     62.0
+    ],
+    "radius": 11.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -4.02,
+    "name": "jupe1"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -7.5,
+     28.5
+    ],
+    "p1": [
+     31.5,
+     61.5
+    ],
+    "radius": 10.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -4.14,
+    "name": "jupe2"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -7.0,
+     29.0
+    ],
+    "p1": [
+     31.0,
+     61.0
+    ],
+    "radius": 10.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -4.26,
+    "name": "jupe3"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -6.5,
+     29.5
+    ],
+    "p1": [
+     30.5,
+     60.5
+    ],
+    "radius": 9.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -4.38,
+    "name": "jupe4"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -6.0,
+     30.0
+    ],
+    "p1": [
+     30.0,
+     60.0
+    ],
+    "radius": 9.0
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -4.5,
+    "name": "jupe5"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -5.5,
+     30.5
+    ],
+    "p1": [
+     29.5,
+     59.5
+    ],
+    "radius": 8.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -3.9,
+    "name": "pied"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -8,
+     28
+    ],
+    "p1": [
+     32,
+     62
+    ],
+    "radius": 11
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 0.3,
+    "direction": "symmetric",
+    "operation": "new",
+    "name": "pied",
+    "body_name": "plat"
+   }
+  },
+  {
+   "command": "solid.loft",
+   "params": {
+    "sections": [
+     {
+      "sketch": "jupe0"
+     },
+     {
+      "sketch": "jupe1"
+     },
+     {
+      "sketch": "jupe2"
+     },
+     {
+      "sketch": "jupe3"
+     },
+     {
+      "sketch": "jupe4"
+     },
+     {
+      "sketch": "jupe5"
+     }
+    ],
+    "operation": "join",
+    "targets": [
+     "plat"
+    ],
+    "name": "jupe"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "edges": [
+     [
+      29.5,
+      45,
+      -4.5
+     ]
+    ],
+    "radius": 0.4,
+    "body": "plat",
+    "name": "conge crete"
+   },
+   "optional": true
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": -5.5,
+    "name": "lentilles"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     20,
+     52
+    ],
+    "radius": 5
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     20,
+     38
+    ],
+    "radius": 5
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     6,
+     45
+    ],
+    "radius": 5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 2.2,
+    "direction": "symmetric",
+    "operation": "join",
+    "name": "lentilles",
+    "targets": [
+     "plat"
+    ]
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "edges": [
+     [
+      25,
+      52,
+      -6.6
+     ]
+    ],
+    "radius": 0.3,
+    "body": "plat",
+    "name": "conge lentilles"
+   },
+   "optional": true
+  },
+  {
+   "command": "solid.combine",
+   "params": {
+    "target": "C",
+    "tools": [
+     "plat"
+    ],
+    "operation": "join"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou0"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     -20,
+     -50
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou0",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou1"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     -8,
+     -50
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou1",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou2"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     4,
+     -50
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou2",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou2"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou3"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16,
+     -50
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou3",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou3"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou4"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     -20,
+     -30
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou4",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou4"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou5"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     -8,
+     -30
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou5",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou5"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou6"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     4,
+     -30
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou6",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou6"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "trou7"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16,
+     -30
+    ],
+    "radius": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "trou7",
+    "distance": 20,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "trou7"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "YZ",
+    "offset": 35,
+    "name": "bouton0"
+   }
+  },
+  {
+   "command": "sketch.slot.overall",
+   "params": {
+    "p0": [
+     -30,
+     0
+    ],
+    "p1": [
+     -22,
+     0
+    ],
+    "width": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "bouton0",
+    "distance": 3,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "bouton0"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "YZ",
+    "offset": 35,
+    "name": "bouton1"
+   }
+  },
+  {
+   "command": "sketch.slot.overall",
+   "params": {
+    "p0": [
+     -10,
+     0
+    ],
+    "p1": [
+     -2,
+     0
+    ],
+    "width": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "bouton1",
+    "distance": 3,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "bouton1"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "YZ",
+    "offset": 35,
+    "name": "bouton2"
+   }
+  },
+  {
+   "command": "sketch.slot.overall",
+   "params": {
+    "p0": [
+     10,
+     0
+    ],
+    "p1": [
+     18,
+     0
+    ],
+    "width": 2.5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "sketch": "bouton2",
+    "distance": 3,
+    "direction": "symmetric",
+    "operation": "cut",
+    "targets": [
+     "C"
+    ],
+    "name": "bouton2"
+   }
+  }
+ ]
+}
