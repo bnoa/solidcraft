@@ -1,0 +1,91 @@
+{
+ "commands": [
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "s0"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -20,
+     -20
+    ],
+    "p1": [
+     20,
+     20
+    ],
+    "radius": 8
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "offset": 3,
+    "name": "s1"
+   }
+  },
+  {
+   "command": "sketch.rectangle.rounded",
+   "params": {
+    "p0": [
+     -15,
+     -15
+    ],
+    "p1": [
+     15,
+     15
+    ],
+    "radius": 5
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.loft",
+   "params": {
+    "sections": [
+     {
+      "sketch": "s0"
+     },
+     {
+      "sketch": "s1"
+     }
+    ],
+    "operation": "new",
+    "body_name": "Plateau",
+    "name": "loft"
+   }
+  },
+  {
+   "command": "solid.offset_face",
+   "params": {
+    "faces": [
+     "F3:end",
+     "F3:start",
+     "F3:side:l1",
+     "F3:side:a1",
+     "F3:side:l4",
+     "F3:side:a4",
+     "F3:side:a2",
+     "F3:side:l3",
+     "F3:side:l2",
+     "F3:side:a3"
+    ],
+    "distance": 0.1,
+    "body": "Plateau",
+    "name": "offset all faces"
+   }
+  }
+ ]
+}
