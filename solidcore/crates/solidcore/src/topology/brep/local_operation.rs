@@ -601,8 +601,11 @@ fn line_extent(line: &UvLine, in_u: bool, r: f64) -> Option<(f64, f64)> {
 ///   most `max_j |P_j - Q_j|` (plus twice a blend's bound);
 /// - a cone or cylinder ([`cone_seam_gap`]).
 ///
-/// A plane is never closed; a curve-bounded, STEP, offset or in-volume surface has no
-/// certificate here. Neither is accepted.
+/// - an offset surface whose base is an extrusion, along the generator
+///   ([`offset_extrusion_seam_gap`]).
+///
+/// A plane is never closed; a curve-bounded, STEP or in-volume surface, and any other
+/// offset surface, has no certificate here. Neither is accepted.
 ///
 /// # Errors
 ///
@@ -617,10 +620,12 @@ fn seam_gap(
     use crate::geom::vector3d::Point3;
     use crate::nurbs::math::{CPoint, NOW};
     let blend = match surface.kind_with_nurb(k)? {
+        SurfaceKind::OffsetSurface(o) => {
+            return offset_extrusion_seam_gap(k, surface, o, in_u, domain)
+        }
         SurfaceKind::Plane(_)
         | SurfaceKind::CurveBounded(_)
         | SurfaceKind::Step(_)
-        | SurfaceKind::OffsetSurface(_)
         | SurfaceKind::SrfInVolume(_) => return Ok(None),
         SurfaceKind::Cone(c) => return cone_seam_gap(k, surface, c, in_u, domain),
         SurfaceKind::ProceduralBlend(pb) => pb.def.bound,
@@ -750,6 +755,137 @@ fn cone_seam_gap(
         bound = bound.max(d.bound + gamma(16) * (p.length() + q.length()));
     }
     Ok(Some(Bounded { value, bound }))
+}
+
+/// The gap across the seam of an offset surface whose base is an extrusion closed along
+/// its generator (the side of an extruded closed spline, offset), the seam in `in_u`'s
+/// direction; `None` for any other base or direction.
+///
+/// The base is an extrusion when its B-spline form is linear along the seam's isos
+/// (degree 1, two control points in the direction that is not closed) and not rational, and its two control points there differ by one
+/// vector `E` in every row, compared exactly ([`is_extrusion_net`]). A boundary iso of
+/// the base at a generator parameter `u` is then the line `A(u) + s E`, and the base's
+/// normal is the same along it (`A'(u) × E` does not depend on `s`), so the offset's
+/// boundary iso `A(u) + d n(u) + s E` is a line parallel to `E` too. The two isos at the
+/// generator's ends are two parallel lines, the distance between their points at one `s`
+/// is the same at every `s`, and their ends bound it: the two pairs of corners are
+/// evaluated, as [`cone_seam_gap`] does for a cone's straight seam.
+fn offset_extrusion_seam_gap(
+    k: &Kernel,
+    surface: &Surface,
+    offset: &crate::surface::offset_surface::OffsetSurface,
+    in_u: bool,
+    domain: &crate::geom::extent2d::Extent2d,
+) -> Result<Option<crate::geom::certified::Bounded>> {
+    use crate::geom::certified::{distance, gamma, Bounded};
+    use crate::geom::vector2d::Point2;
+    let Some(largest) = is_extrusion_net(k, offset.base_surface(), in_u)? else {
+        return Ok(None);
+    };
+    let (lo, hi) = (domain.min, domain.max);
+    let corners = if in_u {
+        [
+            (Point2::new(lo.x, lo.y), Point2::new(hi.x, lo.y)),
+            (Point2::new(lo.x, hi.y), Point2::new(hi.x, hi.y)),
+        ]
+    } else {
+        [
+            (Point2::new(lo.x, lo.y), Point2::new(lo.x, hi.y)),
+            (Point2::new(hi.x, lo.y), Point2::new(hi.x, hi.y)),
+        ]
+    };
+    // each offset point is a base point plus the distance along a unit normal: the base's
+    // evaluation and the normal's unitizing, each rounded
+    let moved = offset.offset_distance().abs();
+    let (mut value, mut bound) = (0.0_f64, 0.0_f64);
+    for (a, b) in corners {
+        let (p, q) = (surface.evaluate_point(k, a)?, surface.evaluate_point(k, b)?);
+        let d = distance(p, q);
+        value = value.max(d.value);
+        // each base point is a convex sum of control points, so its rounding is bounded by the
+        // largest of them, not by its own size (a seam near the origin on a far net)
+        bound = bound.max(d.bound + gamma(32) * (2.0 * largest + 2.0 * moved));
+    }
+    Ok(Some(Bounded { value, bound }))
+}
+
+/// The largest control point's distance from the origin when `base`'s B-spline form is an
+/// extrusion whose generator runs along the
+/// direction `in_u` names: a B-spline or extrusion surface (evaluated through its net),
+/// not rational (every weight one or none), linear across it (degree 1 and two control
+/// points in the other direction), and the second control point of each pair is the
+/// first moved by one vector, the same for every pair, compared exactly (error-free
+/// differences, [`exact`]).
+fn is_extrusion_net(k: &Kernel, base: &Surface, in_u: bool) -> Result<Option<f64>> {
+    // only a surface evaluated through its net: a blend's net only approximates its
+    // definition, which is what it evaluates
+    if !matches!(
+        base.kind_with_nurb(k)?,
+        SurfaceKind::BSpline(_) | SurfaceKind::SurfOfExtrusion(_)
+    ) || base.procedural_blend().is_some()
+        || base.procedural_sweep().is_some()
+    {
+        return Ok(None);
+    }
+    let Some(form) = crate::blend::fillet_section::station::as_b_spline(k, base)? else {
+        return Ok(None);
+    };
+    let Some(net) = form.gw_nurb() else {
+        return Ok(None);
+    };
+    let (p, q) = net.degrees();
+    let rows: Vec<&[CPoint]> = net.rows().collect();
+    let pairs: Vec<(CPoint, CPoint)> = if in_u {
+        if q != 1 {
+            return Ok(None);
+        }
+        let mut pairs = Vec::new();
+        for row in &rows {
+            let [a, b] = row else {
+                return Ok(None);
+            };
+            pairs.push((*a, *b));
+        }
+        pairs
+    } else {
+        let ([a, b], 1) = (rows.as_slice(), p) else {
+            return Ok(None);
+        };
+        if a.len() != b.len() {
+            return Ok(None);
+        }
+        a.iter().copied().zip(b.iter().copied()).collect()
+    };
+    let difference = |(a, b): (CPoint, CPoint)| {
+        [
+            exact::sub(&[b.x], &[a.x]),
+            exact::sub(&[b.y], &[a.y]),
+            exact::sub(&[b.z], &[a.z]),
+        ]
+    };
+    let Some(&first) = pairs.first() else {
+        return Ok(None);
+    };
+    // (a weight of one is no weight: the coordinates are the point's own)
+    let unweighted = |c: &CPoint| c.w == NOW || c.w == 1.0;
+    if pairs.iter().any(|(a, b)| !unweighted(a) || !unweighted(b)) {
+        return Ok(None);
+    }
+    let along = difference(first);
+    let extrusion = pairs.iter().all(|&pair| {
+        difference(pair)
+            .iter()
+            .zip(&along)
+            .all(|(d, e)| exact::is_zero(&exact::sub(d, e)))
+    });
+    // the largest control point: a point evaluated on the net is a convex sum of them, so its
+    // rounding is bounded by theirs, not by its own size
+    let largest = pairs
+        .iter()
+        .flat_map(|(a, b)| [a, b])
+        .map(|c| (c.x * c.x + c.y * c.y + c.z * c.z).sqrt())
+        .fold(0.0_f64, f64::max);
+    Ok(extrusion.then_some(largest))
 }
 
 /// Whether `surface` keeps every seam `face` meets itself across (none for a face that
@@ -2693,6 +2829,72 @@ mod tests {
             matches!(why, Some(OffsetFailure::SeamOpened { face: f }) if f == face),
             "{why:?}"
         );
+    }
+
+    /// A closed extrusion net, not rational: a quadratic closed outline round z (u, its
+    /// start and end tangents along +y, so the seam is smooth), two control points along z
+    /// (v), over `domain`. `moved` shifts the top point of the third row along x, so the net
+    /// is no longer an extrusion (its rows are not one vector apart).
+    fn closed_extrusion(domain: &Extent2d, moved: f64) -> Surface {
+        use crate::nurbs::b_spline_surface::BSplineSurface;
+        use crate::nurbs::math::{CPoint, NOW};
+        let (u0, u1, v0, v1) = (domain.min.x, domain.max.x, domain.min.y, domain.max.y);
+        let r = 0.6;
+        let outline = [(r, 0.0), (r, r), (-r, r), (-r, -r), (r, -r), (r, 0.0)];
+        let net: Vec<Vec<CPoint>> = outline
+            .iter()
+            .enumerate()
+            .map(|(i, &(x, y))| {
+                let top = if i == 2 { x + moved } else { x };
+                vec![CPoint::new(x, y, -1.0, NOW), CPoint::new(top, y, 3.0, NOW)]
+            })
+            .collect();
+        let du = (u1 - u0) / 4.0;
+        let u = vec![
+            u0,
+            u0,
+            u0,
+            u0 + du,
+            u0 + 2.0 * du,
+            u0 + 3.0 * du,
+            u1,
+            u1,
+            u1,
+        ];
+        let v = vec![v0, v0, v1, v1];
+        let n = crate::nurbs::srf_basic::Surface::new(net, 2, 1, u, v).unwrap();
+        Surface::from(BSplineSurface::from_nurb(n, false))
+    }
+
+    /// A cylinder's side given the offset of a closed spline extrusion (as a sketch spline
+    /// extruded and its side offset makes): the offset's seam isos are two parallel lines,
+    /// so its corners certify the gap and the seam is kept. The same net with an inner row's
+    /// top point moved is no extrusion: its seam is still closed, but nothing certifies it, so it
+    /// is refused (what cannot be proved is refused, as an opened seam is).
+    #[test]
+    fn a_cylinder_given_the_offset_of_a_closed_spline_extrusion_keeps_its_seam() {
+        use crate::primitive::api_primitives as ap;
+        use crate::surface::offset_surface::OffsetSurface;
+        let mut k = Kernel::default();
+        let mut b = ap::create_cylinder(&mut k, Point3::ZERO, 1.0, 2.0).unwrap();
+        let face = curved_face(&b);
+        let domain = face_ops::surface(&b, face)
+            .unwrap()
+            .unwrap()
+            .natural_uv_domain_with_nurb(&k)
+            .unwrap();
+        let offset = |moved: f64| {
+            Surface::from(
+                OffsetSurface::new(&k, 0.1, closed_extrusion(&domain, moved), true, 0).unwrap(),
+            )
+        };
+        let kept = offset(0.0);
+        let gap = seam_gap(&k, &kept, true, &domain).unwrap().unwrap();
+        assert!(gap.value <= 1e-12 && gap.bound < 1e-9, "{gap:?}");
+        assert!(keeps_seams(&k, &mut b, face, &kept).unwrap());
+        let skewed = offset(1e-3);
+        assert!(seam_gap(&k, &skewed, true, &domain).unwrap().is_none());
+        assert!(!keeps_seams(&k, &mut b, face, &skewed).unwrap());
     }
 
     /// A 10 mm cube's vertical edge rounded r 2, the round given the narrower coaxial
