@@ -1,0 +1,78 @@
+{
+ "commands": [
+  {
+   "command": "solid.box",
+   "params": {
+    "length": 30,
+    "width": 60,
+    "height": 5,
+    "corner": [
+     0,
+     -30,
+     0
+    ],
+    "name": "Plaque"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "Tri"
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      5,
+      0
+     ],
+     [
+      20,
+      2.6449047106269745
+     ],
+     [
+      20,
+      -2.6449047106269745
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5,
+    "operation": "cut",
+    "name": "TrouTri"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "edges": [
+     [
+      12.5,
+      1.3224523553134873,
+      5
+     ],
+     [
+      12.5,
+      -1.3224523553134873,
+      5
+     ],
+     [
+      20,
+      0,
+      5
+     ]
+    ],
+    "radius": 1,
+    "name": "Conge",
+    "tangent_chain": false
+   }
+  }
+ ]
+}
