@@ -1,0 +1,2743 @@
+{
+ "commands": [
+  {
+   "command": "solid.box",
+   "params": {
+    "length": 100,
+    "width": 40,
+    "height": 3,
+    "corner": [
+     0,
+     0,
+     0
+    ],
+    "name": "Plaque"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "Trous"
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     3.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     3.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     3.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     3.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     3.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     3.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     6.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     6.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     6.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     6.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     6.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     6.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     9.5,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     9.5,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     9.5,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     9.5,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     9.5,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     9.5,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     12.75,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     12.75,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     12.75,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     12.75,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     12.75,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     12.75,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     16.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     19.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     19.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     19.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     19.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     19.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     19.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     22.5,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     22.5,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     22.5,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     22.5,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     22.5,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     22.5,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     25.75,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     25.75,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     25.75,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     25.75,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     25.75,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     25.75,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     29.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     29.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     29.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     29.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     29.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     29.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     32.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     32.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     32.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     32.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     32.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     32.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     35.5,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     35.5,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     35.5,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     35.5,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     35.5,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     35.5,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     38.75,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     38.75,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     38.75,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     38.75,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     38.75,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     38.75,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     42.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     42.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     42.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     42.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     42.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     42.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     45.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     45.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     45.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     45.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     45.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     45.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     48.5,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     48.5,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     48.5,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     48.5,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     48.5,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     48.5,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     51.75,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     51.75,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     51.75,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     51.75,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     51.75,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     51.75,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     55.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     55.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     55.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     55.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     55.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     55.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     58.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     58.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     58.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     58.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     58.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     58.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     61.5,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     61.5,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     61.5,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     61.5,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     61.5,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     61.5,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     64.75,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     64.75,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     64.75,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     64.75,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     64.75,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     64.75,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     68.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     68.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     68.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     68.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     68.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     68.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     71.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     71.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     71.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     71.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     71.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     71.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     74.5,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     74.5,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     74.5,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     74.5,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     74.5,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     74.5,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     77.75,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     77.75,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     77.75,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     77.75,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     77.75,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     77.75,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     81.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     81.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     81.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     81.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     81.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     81.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     84.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     84.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     84.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     84.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     84.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     84.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     87.5,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     87.5,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     87.5,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     87.5,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     87.5,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     87.5,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     90.75,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     90.75,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     90.75,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     90.75,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     90.75,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     90.75,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     94.0,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     94.0,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     94.0,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     94.0,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     94.0,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     94.0,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     97.25,
+     5
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     97.25,
+     11
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     97.25,
+     17
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     97.25,
+     23
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     97.25,
+     29
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "sketch.circle.center",
+   "params": {
+    "center": [
+     97.25,
+     35
+    ],
+    "radius": 1
+   }
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 3,
+    "operation": "cut",
+    "name": "Percage"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "edges": [
+     [
+      4.0,
+      5,
+      3
+     ],
+     [
+      4.0,
+      11,
+      3
+     ],
+     [
+      4.0,
+      17,
+      3
+     ],
+     [
+      4.0,
+      23,
+      3
+     ],
+     [
+      4.0,
+      29,
+      3
+     ],
+     [
+      4.0,
+      35,
+      3
+     ],
+     [
+      7.25,
+      5,
+      3
+     ],
+     [
+      7.25,
+      11,
+      3
+     ],
+     [
+      7.25,
+      17,
+      3
+     ],
+     [
+      7.25,
+      23,
+      3
+     ],
+     [
+      7.25,
+      29,
+      3
+     ],
+     [
+      7.25,
+      35,
+      3
+     ],
+     [
+      10.5,
+      5,
+      3
+     ],
+     [
+      10.5,
+      11,
+      3
+     ],
+     [
+      10.5,
+      17,
+      3
+     ],
+     [
+      10.5,
+      23,
+      3
+     ],
+     [
+      10.5,
+      29,
+      3
+     ],
+     [
+      10.5,
+      35,
+      3
+     ],
+     [
+      13.75,
+      5,
+      3
+     ],
+     [
+      13.75,
+      11,
+      3
+     ],
+     [
+      13.75,
+      17,
+      3
+     ],
+     [
+      13.75,
+      23,
+      3
+     ],
+     [
+      13.75,
+      29,
+      3
+     ],
+     [
+      13.75,
+      35,
+      3
+     ],
+     [
+      17.0,
+      5,
+      3
+     ],
+     [
+      17.0,
+      11,
+      3
+     ],
+     [
+      17.0,
+      17,
+      3
+     ],
+     [
+      17.0,
+      23,
+      3
+     ],
+     [
+      17.0,
+      29,
+      3
+     ],
+     [
+      17.0,
+      35,
+      3
+     ],
+     [
+      20.25,
+      5,
+      3
+     ],
+     [
+      20.25,
+      11,
+      3
+     ],
+     [
+      20.25,
+      17,
+      3
+     ],
+     [
+      20.25,
+      23,
+      3
+     ],
+     [
+      20.25,
+      29,
+      3
+     ],
+     [
+      20.25,
+      35,
+      3
+     ],
+     [
+      23.5,
+      5,
+      3
+     ],
+     [
+      23.5,
+      11,
+      3
+     ],
+     [
+      23.5,
+      17,
+      3
+     ],
+     [
+      23.5,
+      23,
+      3
+     ],
+     [
+      23.5,
+      29,
+      3
+     ],
+     [
+      23.5,
+      35,
+      3
+     ],
+     [
+      26.75,
+      5,
+      3
+     ],
+     [
+      26.75,
+      11,
+      3
+     ],
+     [
+      26.75,
+      17,
+      3
+     ],
+     [
+      26.75,
+      23,
+      3
+     ],
+     [
+      26.75,
+      29,
+      3
+     ],
+     [
+      26.75,
+      35,
+      3
+     ],
+     [
+      30.0,
+      5,
+      3
+     ],
+     [
+      30.0,
+      11,
+      3
+     ],
+     [
+      30.0,
+      17,
+      3
+     ],
+     [
+      30.0,
+      23,
+      3
+     ],
+     [
+      30.0,
+      29,
+      3
+     ],
+     [
+      30.0,
+      35,
+      3
+     ],
+     [
+      33.25,
+      5,
+      3
+     ],
+     [
+      33.25,
+      11,
+      3
+     ],
+     [
+      33.25,
+      17,
+      3
+     ],
+     [
+      33.25,
+      23,
+      3
+     ],
+     [
+      33.25,
+      29,
+      3
+     ],
+     [
+      33.25,
+      35,
+      3
+     ],
+     [
+      36.5,
+      5,
+      3
+     ],
+     [
+      36.5,
+      11,
+      3
+     ],
+     [
+      36.5,
+      17,
+      3
+     ],
+     [
+      36.5,
+      23,
+      3
+     ],
+     [
+      36.5,
+      29,
+      3
+     ],
+     [
+      36.5,
+      35,
+      3
+     ],
+     [
+      39.75,
+      5,
+      3
+     ],
+     [
+      39.75,
+      11,
+      3
+     ],
+     [
+      39.75,
+      17,
+      3
+     ],
+     [
+      39.75,
+      23,
+      3
+     ],
+     [
+      39.75,
+      29,
+      3
+     ],
+     [
+      39.75,
+      35,
+      3
+     ],
+     [
+      43.0,
+      5,
+      3
+     ],
+     [
+      43.0,
+      11,
+      3
+     ],
+     [
+      43.0,
+      17,
+      3
+     ],
+     [
+      43.0,
+      23,
+      3
+     ],
+     [
+      43.0,
+      29,
+      3
+     ],
+     [
+      43.0,
+      35,
+      3
+     ],
+     [
+      46.25,
+      5,
+      3
+     ],
+     [
+      46.25,
+      11,
+      3
+     ],
+     [
+      46.25,
+      17,
+      3
+     ],
+     [
+      46.25,
+      23,
+      3
+     ],
+     [
+      46.25,
+      29,
+      3
+     ],
+     [
+      46.25,
+      35,
+      3
+     ],
+     [
+      49.5,
+      5,
+      3
+     ],
+     [
+      49.5,
+      11,
+      3
+     ],
+     [
+      49.5,
+      17,
+      3
+     ],
+     [
+      49.5,
+      23,
+      3
+     ],
+     [
+      49.5,
+      29,
+      3
+     ],
+     [
+      49.5,
+      35,
+      3
+     ],
+     [
+      52.75,
+      5,
+      3
+     ],
+     [
+      52.75,
+      11,
+      3
+     ],
+     [
+      52.75,
+      17,
+      3
+     ],
+     [
+      52.75,
+      23,
+      3
+     ],
+     [
+      52.75,
+      29,
+      3
+     ],
+     [
+      52.75,
+      35,
+      3
+     ],
+     [
+      56.0,
+      5,
+      3
+     ],
+     [
+      56.0,
+      11,
+      3
+     ],
+     [
+      56.0,
+      17,
+      3
+     ],
+     [
+      56.0,
+      23,
+      3
+     ],
+     [
+      56.0,
+      29,
+      3
+     ],
+     [
+      56.0,
+      35,
+      3
+     ],
+     [
+      59.25,
+      5,
+      3
+     ],
+     [
+      59.25,
+      11,
+      3
+     ],
+     [
+      59.25,
+      17,
+      3
+     ],
+     [
+      59.25,
+      23,
+      3
+     ],
+     [
+      59.25,
+      29,
+      3
+     ],
+     [
+      59.25,
+      35,
+      3
+     ],
+     [
+      62.5,
+      5,
+      3
+     ],
+     [
+      62.5,
+      11,
+      3
+     ],
+     [
+      62.5,
+      17,
+      3
+     ],
+     [
+      62.5,
+      23,
+      3
+     ],
+     [
+      62.5,
+      29,
+      3
+     ],
+     [
+      62.5,
+      35,
+      3
+     ],
+     [
+      65.75,
+      5,
+      3
+     ],
+     [
+      65.75,
+      11,
+      3
+     ],
+     [
+      65.75,
+      17,
+      3
+     ],
+     [
+      65.75,
+      23,
+      3
+     ],
+     [
+      65.75,
+      29,
+      3
+     ],
+     [
+      65.75,
+      35,
+      3
+     ],
+     [
+      69.0,
+      5,
+      3
+     ],
+     [
+      69.0,
+      11,
+      3
+     ],
+     [
+      69.0,
+      17,
+      3
+     ],
+     [
+      69.0,
+      23,
+      3
+     ],
+     [
+      69.0,
+      29,
+      3
+     ],
+     [
+      69.0,
+      35,
+      3
+     ],
+     [
+      72.25,
+      5,
+      3
+     ],
+     [
+      72.25,
+      11,
+      3
+     ],
+     [
+      72.25,
+      17,
+      3
+     ],
+     [
+      72.25,
+      23,
+      3
+     ],
+     [
+      72.25,
+      29,
+      3
+     ],
+     [
+      72.25,
+      35,
+      3
+     ],
+     [
+      75.5,
+      5,
+      3
+     ],
+     [
+      75.5,
+      11,
+      3
+     ],
+     [
+      75.5,
+      17,
+      3
+     ],
+     [
+      75.5,
+      23,
+      3
+     ],
+     [
+      75.5,
+      29,
+      3
+     ],
+     [
+      75.5,
+      35,
+      3
+     ],
+     [
+      78.75,
+      5,
+      3
+     ],
+     [
+      78.75,
+      11,
+      3
+     ],
+     [
+      78.75,
+      17,
+      3
+     ],
+     [
+      78.75,
+      23,
+      3
+     ],
+     [
+      78.75,
+      29,
+      3
+     ],
+     [
+      78.75,
+      35,
+      3
+     ],
+     [
+      82.0,
+      5,
+      3
+     ],
+     [
+      82.0,
+      11,
+      3
+     ],
+     [
+      82.0,
+      17,
+      3
+     ],
+     [
+      82.0,
+      23,
+      3
+     ],
+     [
+      82.0,
+      29,
+      3
+     ],
+     [
+      82.0,
+      35,
+      3
+     ],
+     [
+      85.25,
+      5,
+      3
+     ],
+     [
+      85.25,
+      11,
+      3
+     ],
+     [
+      85.25,
+      17,
+      3
+     ],
+     [
+      85.25,
+      23,
+      3
+     ],
+     [
+      85.25,
+      29,
+      3
+     ],
+     [
+      85.25,
+      35,
+      3
+     ],
+     [
+      88.5,
+      5,
+      3
+     ],
+     [
+      88.5,
+      11,
+      3
+     ],
+     [
+      88.5,
+      17,
+      3
+     ],
+     [
+      88.5,
+      23,
+      3
+     ],
+     [
+      88.5,
+      29,
+      3
+     ],
+     [
+      88.5,
+      35,
+      3
+     ],
+     [
+      91.75,
+      5,
+      3
+     ],
+     [
+      91.75,
+      11,
+      3
+     ],
+     [
+      91.75,
+      17,
+      3
+     ],
+     [
+      91.75,
+      23,
+      3
+     ],
+     [
+      91.75,
+      29,
+      3
+     ],
+     [
+      91.75,
+      35,
+      3
+     ],
+     [
+      95.0,
+      5,
+      3
+     ],
+     [
+      95.0,
+      11,
+      3
+     ],
+     [
+      95.0,
+      17,
+      3
+     ],
+     [
+      95.0,
+      23,
+      3
+     ],
+     [
+      95.0,
+      29,
+      3
+     ],
+     [
+      95.0,
+      35,
+      3
+     ],
+     [
+      98.25,
+      5,
+      3
+     ],
+     [
+      98.25,
+      11,
+      3
+     ],
+     [
+      98.25,
+      17,
+      3
+     ],
+     [
+      98.25,
+      23,
+      3
+     ],
+     [
+      98.25,
+      29,
+      3
+     ],
+     [
+      98.25,
+      35,
+      3
+     ]
+    ],
+    "radius": 0.3,
+    "name": "Conge",
+    "tangent_chain": false
+   }
+  }
+ ]
+}
