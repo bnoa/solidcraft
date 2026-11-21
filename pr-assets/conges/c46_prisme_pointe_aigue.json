@@ -1,0 +1,63 @@
+{
+ "commands": [
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "Tri"
+   }
+  },
+  {
+   "command": "sketch.line",
+   "params": {
+    "points": [
+     [
+      5,
+      10
+     ],
+     [
+      35,
+      12.6
+     ],
+     [
+      35,
+      7.4
+     ]
+    ],
+    "closed": true
+   }
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": 5,
+    "name": "Prisme"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "edges": [
+     [
+      20,
+      11.3,
+      5
+     ],
+     [
+      20,
+      8.7,
+      5
+     ],
+     [
+      35,
+      10,
+      5
+     ]
+    ],
+    "radius": 1,
+    "name": "Conge",
+    "tangent_chain": false
+   }
+  }
+ ]
+}
